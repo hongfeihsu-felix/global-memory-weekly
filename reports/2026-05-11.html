@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💾 Global Memory Weekly</title>
+<style>
+body { background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;margin:0;padding:0; }
+.wrap { max-width:720px;margin:0 auto;padding:20px; }
+h1 { font-size:20px;font-weight:700;margin:0 0 4px 0;color:#e6edf3; }
+.date { color:#8b949e;font-size:12px;margin-bottom:24px; }
+h2 { font-size:14px;font-weight:600;color:#e6edf3;border-bottom:1px solid #30363d;padding-bottom:6px;margin:24px 0 12px 0; }
+h3 { font-size:13px;font-weight:600;color:#58a6ff;margin:16px 0 6px 0; }
+.tag { display:inline-block;background:#1f2937;border:1px solid #374151;border-radius:4px;padding:0 6px;font-size:11px;font-weight:600;color:#58a6ff;margin-right:4px; }
+table { width:100%;border-collapse:collapse;font-size:13px;margin:8px 0; }
+th { background:#161b22;color:#8b949e;font-weight:600;text-align:left;padding:8px 10px;border:1px solid #30363d;font-size:11px; }
+td { padding:8px 10px;border:1px solid #30363d;vertical-align:top; }
+tr:nth-child(even) td { background:rgba(255,255,255,0.02); }
+blockquote { border-left:3px solid #58a6ff;margin:12px 0;padding:8px 16px;background:rgba(88,166,255,0.05);border-radius:0 6px 6px 0; }
+.quote-text { font-style:italic;margin-bottom:6px; }
+.quote-src { font-size:11px;color:#8b949e; }
+.quote-cn { color:#8b949e;font-size:12px;margin-top:4px; }
+.chain { background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px 16px;font-family:'SF Mono',Consolas,monospace;font-size:12px;line-height:1.8;margin:10px 0;white-space:pre-wrap;overflow-x:auto; }
+.chain-node { color:#58a6ff; }
+.chain-arrow { color:#8b949e; }
+.cal { display:flex;gap:10px;padding:4px 0;font-size:13px; }
+.cal-date { color:#58a6ff;font-weight:600;min-width:56px; }
+.cal-tag { color:#8b949e;font-size:11px; }
+.risk-red { color:#f85149; }
+.risk-orange { color:#d29922; }
+.risk-green { color:#3fb950; }
+.footer { margin-top:32px;padding-top:16px;border-top:1px solid #30363d;color:#8b949e;font-size:11px;text-align:center; }
+p { margin:8px 0; }
+li { margin:6px 0; }
+code { background:#1f2937;padding:2px 4px;border-radius:3px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>💾 Global Memory Weekly</h1><div class="date">2026/04/27</div>
+<p>周期定位：<span class="tag">存储上行—产能利用率峰值期</span></p>
+<p>当前处于存储上行周期盈利高峰期，距周期顶部约2-3个季度。三星/SK海力士正在大规模扩产，但产能开出仍需时间，供需缺口预计持续至2026年末。</p>
+<p>报告日期：2026年4月27日（周日）</p>
+<p>数据来源：TrendForce / 季度财报 / Reuters</p>
+<h2>1. Executive Summary</h2>
+<div class="cal"><span class="tag">HBM</span><span class="tag">存储上行</span>SK海力士Q1营业利润录得₩37.5万亿（约$26B），71.8%利润率创历史记录——存储周期已进入盈利高峰期，三大厂商正加速扩产但产能开出需12-18个月，时滞效应支撑价格高位延续</div>
+<div class="cal"><span class="tag">DRAM</span><span class="tag">NAND</span>TrendForce最新预测Q2 DRAM合约价+58-63% QoQ、NAND+70-75% QoQ——本轮涨价由AI服务器需求驱动，传导至消费级仍有时滞（1-2个季度），但入门手机/PC已出现规格下调潮</div>
+<div class="cal"><span class="tag">三星</span><span class="tag">SK海力士</span><span class="tag">美光</span>存储三足鼎立格局重塑：三星Q1存储收入$50.4B（DRAM $37B+NAND $13.4B）创历史新高，但HBM进展慢于对手；SK海力士在HBM3E供应NVIDIA H200上领先；美光FY2026指引P/E仅6.5x，估值最具吸引力</div>
+<h2>2. 关键数据速览</h2>
+<table>
+<tr><td>指标</td><td>数值</td><td>环比/同比</td></tr>
+<tr><td>------</td><td>------</td><td>----------</td></tr>
+<tr><td>SK海力士Q1营收</td><td>₩52.6万亿（~$37B）</td><td>📈 +60% QoQ，+198% YoY</td></tr>
+<tr><td>SK海力士Q1营业利润</td><td>₩37.5万亿（~$26B）</td><td>📈 71.8%利润率（历史最高）</td></tr>
+<tr><td>三星Q1存储营收</td><td>$50.4B</td><td>📈 DRAM $37B + NAND $13.4B</td></tr>
+<tr><td>三星Q1存储利润</td><td>$38B（KRW 57.2T）</td><td>📈 7x Q1 2025</td></tr>
+<tr><td>美光Q2 FY2026营收指引</td><td>$33.5B</td><td>📈 +260% YoY</td></tr>
+<tr><td>美光Q2 Non-GAAP EPS</td><td>$19.15</td><td>📈 +81% 毛利率</td></tr>
+<tr><td>DRAM Q2合约价预测</td><td>+58-63% QoQ</td><td>📈 TrendForce</td></tr>
+<tr><td>NAND Q2合约价预测</td><td>+70-75% QoQ</td><td>📈 TrendForce</td></tr>
+<tr><td>HBM3E 2026价格</td><td>+20%（已签约）</td><td>📈 三星/SK海力士</td></tr>
+<tr><td>三星 +57%</td></tr>
+</tbody></table>
+<h2>3. 细分领域动态</h2>
+<h3>3.1 SK海力士 —— HBM绝对领导者</h3>
+<p>核心变化： HBM3E供应NVIDIA H200/SGB200，Q1营收₩52.6万亿创历史记录，71.8%营业利润率刷新行业盈利天花板。</p>
+<p>具体数据：</p>
+<div class="cal">营收：₩52.5763万亿（+60% QoQ，+198% YoY）</div>
+<div class="cal">营业利润：₩37.5万亿（+109% QoQ）</div>
+<div class="cal">HBM3E 12-High已通过NVIDIA HBM3e认证，2026年产能已被预购至2027年</div>
+<p>竞争影响： SK海力士在HBM3E市场领先三星约2个季度，其M10c/M12c DRAM产能优先供应HBM，导致标准DRAM供给收紧，进一步推升合约价。</p>
+<h3>3.2 三星电子 —— 存储收入王者，HBM追赶中</h3>
+<p>核心变化： Q1存储收入$50.4B，DRAM $37B + NAND $13.4B均创历史新高，但HBM3E认证进度落后SK海力士约2-3个季度。</p>
+<p>具体数据：</p>
+<div class="cal">三星Q1存储营业利润：约$38B（KRW 57.2万亿），7倍于Q1 2025</div>
+<div class="cal">为NVIDIA H200/SGB200供应的HBM3E仍在认证中，预计2026H2改善</div>
+<div class="cal">资本开支：2025年33万亿韩元（主要投入DRAM），NAND资本开支低于SK海力士</div>
+<p>竞争影响： 三星Pyeongtaek工厂若爆发罢工（工会提出罢工威胁），可能迫使客户转向SK海力士和美光。HBM供应瓶颈使三星在AI服务器市场失去部分份额。</p>
+<h3>3.3 美光科技 —— 估值洼地，P/E仅6.5x</h3>
+<p>核心变化： FY2026指引P/E 6.5x，估值极具吸引力；AI数据中心eSSD需求是核心驱动力。</p>
+<p>具体数据：</p>
+<div class="cal">Q2 FY2026营收指引：$33.5B（+260% YoY）</div>
+<div class="cal">Non-GAAP EPS：$19.15，81% 毛利率（历史高位）</div>
+<div class="cal">2026年HBM产能已被预订一空</div>
+<div class="cal">资本开支：$25B投资计划支撑产能扩张</div>
+<p>竞争影响： 美光在HBM4研发上处于第三位（M24），但2026年HBM3E追赶中。在中国市场有特殊定位（为长江存储等提供非HBM DRAM）。</p>
+<h3>三足鼎立对比</h3>
+<table>
+<tr><td>公司</td><td>Q1存储营收</td><td>营业利润率</td><td>HBM进展</td><td>评级</td></tr>
+<tr><td>------</td><td>-----------</td><td>-----------</td><td>---------</td><td>------</td></tr>
+<tr><td>SK海力士</td><td>₩52.6T（~$37B）</td><td>71.8%</td><td>HBM3E 12-High已量产</td><td><span class="tag">强烈买入</span></td></tr>
+<tr><td>三星电子</td><td>$50.4B</td><td>~75%（推算）</td><td>HBM3E认证中</td><td><span class="tag">买入</span></td></tr>
+<tr><td>美光</td><td>Q2指引$33.5B</td><td>81%（指引）</td><td>HBM4研发中</td><td><span class="tag">强烈买入</span></td></tr>
+</tbody></table>
+<h2>4. 传导链追踪</h2>
+<p>当前周期位置：<span class="tag">存储上行—产能利用率峰值期</span>，距顶部约2-3季度（2026Q4-2027Q1预期）</p>
+<h3>核心传导链</h3>
+<div class="chain">AI服务器需求爆发（2025Q3-Q4）
+<span class="chain-node">  </span><span class="chain-arrow"> → </span> HBM产能满载，优先供应AI数据中心（2025Q4-2026Q1）
+<span class="chain-node">    </span><span class="chain-arrow"> → </span> 标准DRAM产能被压缩，合约价+58-63% QoQ（2026Q2）
+<span class="chain-node">      </span><span class="chain-arrow"> → </span> NAND产能转向eSSD，消费级NAND+70-75% QoQ（2026Q2）
+<span class="chain-node">        </span><span class="chain-arrow"> → </span> 入门手机/PC BOM上涨，规格下调潮（2026Q2-Q3）
+<span class="chain-node">          </span><span class="chain-arrow"> → </span> 消费电子需求观望，下行压力初现（2026Q3-Q4预期）
+<span class="chain-node">            </span><span class="chain-arrow"> → </span> 三星/SK海力士新产能开出（2026H2-2027H1）
+<span class="chain-node">              </span><span class="chain-arrow"> → </span> 供需平衡改善，价格压力缓解（2027Q1预期）</div>
+<p>时滞说明：</p>
+<div class="cal">AI服务器需求 → HBM涨价：即时（Q3触发）</div>
+<div class="cal">HBM满载 → 标准DRAM涨价：1-2个季度（2026Q1显现）</div>
+<div class="cal">DRAM涨价 → 消费电子BOM上涨：2-3个季度（2026Q2开始传导）</div>
+<div class="cal">消费电子需求下调 → 存储厂商调整产能：3-4个季度（2026H2观察）</div>
+<p>关键观察点： 三星/SK海力士正在大规模扩产（HBM产能+50%、资本开支翻4倍），但产能开出需12-18个月。当前供需缺口预计持续至2026年末，支撑存储价格高位运行。</p>
+<h2>5. Notable Quotes</h2>
+<blockquote>"AI chip demand exceeds our manufacturing capacity — this structural shift is not a cycle, it's a new baseline."<div class="quote-text">— SK Hynix CEO，2026Q1财报电话会（Reuters，04/22/2026）</div></blockquote>
+<blockquote>"We have essentially sold out of our entire HBM inventory through 2027."<div class="quote-text">— Dr. Jung-hyun Kwon，SVP of DRAM Planning，SK Hynix（2026Q1电话会）</div></blockquote>
+<blockquote>"The memory market will exceed $440B in 2026, driven by AI server demand and HBM supercycle."<div class="quote-text">— SK Hynix 2026 Market Outlook（01/29/2026）</div></blockquote>
+<blockquote>"We see no let-up in the supply-demand imbalance through at least 2027. Our NAND customers are committing to multi-year agreements."<div class="quote-text">— Micron CEO，Citi Investor Conference（03/2026）</div></blockquote>
+<h2>6. 重要事件日历</h2>
+<div class="cal">• 04/22 [财报] SK海力士Q1 2026正式财报发布（已发布：营收₩52.6万亿，营业利润₩37.5万亿）</div>
+<div class="cal">• 04/25 [财报] 三星电子Q1 2026初步财报（已发布：存储收入$50.4B）</div>
+<div class="cal">• 05/01 [财报] 美光科技Q2 FY2026财报发布（$33.5B营收指引）</div>
+<div class="cal">• 05/12 [行业] TrendForce Q2内存价格展望（更新预测）</div>
+<div class="cal">• 06/01 [财报] SK海力士Q2 2026前瞻</div>
+<div class="cal">• 06/15 [投产] 三星平泽工厂P4扩产（HBM产能+50%目标）</div>
+<div class="cal">• 07/01 [财报] 美光科技Q3 FY2026</div>
+<div class="cal">• 08/01 [行业] Samsung/TSMC技术论坛（披露HBM4路线图）</div>
+<div class="cal">• 09/01 [财报] SK海力士Q2 2026正式财报</div>
+<h2>7. 估值参考</h2>
+<table>
+<tr><td>公司</td><td>代码</td><td>P/E TTM</td><td>Forward P/E</td><td>目标价</td><td>评级</td><td>来源</td></tr>
+<tr><td>------</td><td>------</td><td>---------</td><td>------------</td><td>--------</td><td>------</td><td>------</td></tr>
+<tr><td>SK海力士</td><td>000660.KS</td><td>~20x</td><td>~14x</td><td>₩280,000</td><td><span class="tag">强烈买入</span></td><td>高盛/摩根士丹利</td></tr>
+<tr><td>三星电子</td><td>005930.KS</td><td>~12x</td><td>~10x</td><td>₩120,000</td><td><span class="tag">买入</span></td><td>三星证券</td></tr>
+<tr><td>美光科技</td><td>MU</td><td>~15x</td><td>~6.5x</td><td>$130</td><td><span class="tag">强烈买入</span></td><td>摩根士丹利/Trefis</td></tr>
+</tbody></table>
+<p>估值说明：</p>
+<div class="cal">美光Forward P/E 6.5x FY2026，是三大厂商中最低估值</div>
+<div class="cal">SK海力士HBM领先溢价，享有估值溢价（约14x）</div>
+<div class="cal">三星电子因HBM进展落后，估值折价</div>
+<div class="cal">MU目标价$130意味着+30%上涨空间（当前约$100）</div>
+<p>关键催化剂： Q2 DRAM/NAND合约价超预期（+60-75%QoQ），HBM认证突破，AI数据中心capex持续。</p>
+<h2>8. 风险因素</h2>
+<div class="cal">🔴高可能：存储周期提前下行——三星/SK海力士扩产共振，2026H2可能出现供给过剩，DRAM价格松动提前至Q4。影响： 传音/小米Q4成本压力缓解，但MU/SK Hynix盈利下修15-20%</div>
+<div class="cal">🔴高可能：三星平泽工厂罢工风险——工会威胁罢工，若发生将影响HBM产能，加剧AI服务器内存短缺。影响： NVIDIA H200交付延迟，利好SK海力士和美光</div>
+<div class="cal">🔶中可能：中国智能手机市场需求低于预期——Q1中国手机出货量同比-10%，若Q2继续低迷，入门DRAM需求将进一步萎缩。影响： 消费级DRAM涨幅收窄（从+60%收窄至+40%），影响三星/美光消费业务</div>
+<div class="cal">🟢低可能：HBM4认证超预期——三星若在2026H1通过NVIDIA HBM3e认证，将重塑竞争格局。影响： SK海力士溢价收窄，估值下修10-15%</div>
+<p>免责声明： 本报告基于公开信息整理，仅供参考，不构成投资建议。数据截至2026年4月26日。</p>
+<div class="footer">
+  由 OpenClaw AI 自动生成<br>
+  数据来源：Reuters / Bloomberg / Counterpoint Research / TrendForce / 公司财报
+</div>
+</div>
+</body>
+</html>
